@@ -1,0 +1,23 @@
+﻿DROP TABLE MEMBER;
+
+DROP SEQUENCE member_seq;
+
+-----------------------------------------------
+-- create member
+-----------------------------------------------
+CREATE TABLE MEMBER 
+(
+    memNo       VARCHAR2(5 BYTE) NOT NULL ,
+    memId       VARCHAR2(20 BYTE) NOT NULL ,
+    visitTimes  NUMBER(5, 0) NOT NULL ,
+
+    CONSTRAINT member_pk PRIMARY KEY (memNo),
+    CONSTRAINT MEMID_unique UNIQUE (memId)
+
+);
+CREATE SEQUENCE member_seq
+INCREMENT BY 1
+START WITH 1
+NOMAXVALUE
+NOCYCLE
+NOCACHE;
