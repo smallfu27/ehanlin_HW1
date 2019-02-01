@@ -21,3 +21,6 @@ START WITH 1
 NOMAXVALUE
 NOCYCLE
 NOCACHE;
+
+INSERT INTO MEMBER VALUES ('M'||LPAD(to_char(member_seq.NEXTVAL), 4, '0'),'Tim','0');
+commit;
