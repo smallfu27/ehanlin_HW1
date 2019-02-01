@@ -1,6 +1,5 @@
 # ehanlin_HW1
-DB:Oracle ; Language:Java
-Server Runtime Environments : Tomcat v9.0
+DB:Oracle ; Language:Java ; Server Runtime Environments : Tomcat v9.0
 
 依照使用者輸入名稱，計數點擊加總(總共一頁)： 
 採用MVC架構，使用兩種方式實作:
